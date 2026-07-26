@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal B&P 2027</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        .subtitle {
+            font-size: 14px;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #1c1e21;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            box-shadow: 0 3px 6px rgba(40,167,69,0.2);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .period {
+            font-size: 15px;
+            color: #606770;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .menu-button {
+            display: block;
+            padding: 15px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+        .menu-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        /* Estilo para los módulos que aún no están conectados al 2027 */
+        .menu-button.pending {
+            background-color: #6c757d;
+            opacity: 0.9;
+        }
+        .menu-button.pending:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="subtitle">Sistema Integrado</div>
+        <h1>Be Eventos | Epic | Peque Planners</h1>
+        
+        <div class="badge">Consolidación 2027</div>
+        <div class="period">Periodo Agosto 26 - Agosto 27</div>
+
+        <div class="button-grid">
+            <!-- Módulos Activos 2027 -->
+            <a href="https://asesores-27.onrender.com" class="menu-button">CRM (Asesores)</a>
+            <a href="https://admin-be-eventos-2027.onrender.com" class="menu-button">Administración Be</a>
+            <a href="https://admin-pequeplanners-2027.onrender.com" class="menu-button">Administración Peque</a>
+
+            <!-- Módulos Pendientes (Listos para actualizar enlaces luego) -->
+            <a href="#" class="menu-button pending">Módulo de Confección (Próximamente)</a>
+            <a href="#" class="menu-button pending">La Torre (Próximamente)</a>
+            <a href="#" class="menu-button pending">Fotos Extras (Próximamente)</a>
+            <a href="#" class="menu-button pending">Inventario (Próximamente)</a>
+        </div>
+    </div>
+</body>
+</html>
